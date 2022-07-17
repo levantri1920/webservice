@@ -6,7 +6,6 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServicePackController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\BanksController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -69,8 +68,6 @@ Route::group(['middleware' => 'user'], function () {
     Route::get('/recharges-history',[AdminController::class,'getRechargeHistory'])->name('recharges.history');
     //purchase history
     Route::get('/purchases-history',[AdminController::class,'history'])->name('purchases.history');
-    // banks
-    Route::resource('banks', BanksController::class);
 });
 
 //transaction

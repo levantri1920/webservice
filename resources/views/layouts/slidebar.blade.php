@@ -77,12 +77,6 @@
                 <p>Thành viên</p>
             </a>
         </li>
-        <li class="nav-item">
-            <a href="{{ route('banks.index') }}" class="nav-link">
-                <i class="fas fa-credit-card nav-icon"></i>
-                <p>Bank</p>
-            </a>
-        </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->
